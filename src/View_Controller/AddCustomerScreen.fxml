@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.AddCustomerController">
+   <children>
+      <Label layoutX="151.0" layoutY="6.0" text="Add Customer">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+      <Button layoutX="251.0" layoutY="445.0" mnemonicParsing="false" onMouseClicked="#changeToMainScreen" text="Cancel" />
+      <HBox layoutX="14.0" layoutY="32.0" prefHeight="265.0" prefWidth="353.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="30.0">
+               <children>
+                  <Label prefHeight="25.0" text="Customer Name" />
+                  <Label prefHeight="25.0" text="Address" />
+                  <Label prefHeight="25.0" text="Address 2" />
+                  <Label prefHeight="25.0" text="City" />
+                  <Label prefHeight="25.0" text="Postal Code" />
+                  <Label prefHeight="25.0" text="Country" />
+                  <Label prefHeight="25.0" text="Phone" />
+               </children>
+            </VBox>
+            <VBox prefHeight="265.0" prefWidth="169.0" spacing="30.0">
+               <children>
+                  <TextField fx:id="customerName" prefHeight="25.0" />
+                  <TextField fx:id="customerAddress" prefHeight="25.0" />
+                  <TextField fx:id="customerAddress2" prefHeight="25.0" />
+                  <TextField fx:id="customerCity" prefHeight="25.0" />
+                  <TextField fx:id="customerZip" prefHeight="25.0" />
+                  <TextField fx:id="customerCountry" prefHeight="25.0" />
+                  <TextField fx:id="customerPhone" prefHeight="25.0" />
+               </children>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="10.0" left="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <Button layoutX="99.0" layoutY="445.0" mnemonicParsing="false" onMouseClicked="#addNewCustomer" text="Save" />
+   </children>
+</AnchorPane>

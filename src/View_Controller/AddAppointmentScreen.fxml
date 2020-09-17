@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="572.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.AddAppointmentController">
+   <children>
+      <Label layoutX="366.0" layoutY="6.0" text="Add Appointment">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="41.0" text="Select Customer" />
+      <Button layoutX="665.0" layoutY="527.0" mnemonicParsing="false" onMouseClicked="#changeToMainScreen" text="Cancel" />
+       <TableView fx:id="customerTable" layoutX="14.0" layoutY="58.0" prefHeight="275.0" prefWidth="796.0">
+           <columns>
+               <TableColumn fx:id="nameColumn" prefWidth="102.0" text="Customer" />
+               <TableColumn fx:id="addressColumn" prefWidth="216.0" text="Address" />
+               <TableColumn fx:id="address2Column" prefWidth="110.0" text="Address 2" />
+               <TableColumn fx:id="cityColumn" prefWidth="87.0" text="City" />
+               <TableColumn fx:id="zipColumn" prefWidth="103.0" text="Postal Code" />
+               <TableColumn fx:id="countryColumn" prefWidth="82.0" text="Country" />
+               <TableColumn fx:id="phoneColumn" prefWidth="99.0" text="Phone" />
+           </columns>
+       </TableView>
+      <Label layoutX="14.0" layoutY="350.0" prefHeight="25.0" text="Title" />
+      <TextField fx:id="apptTitle" layoutX="114.0" layoutY="350.0" prefHeight="25.0" />
+      <Label layoutX="329.0" layoutY="350.0" prefHeight="25.0" text="Description" />
+      <TextField fx:id="apptDesc" layoutX="414.0" layoutY="350.0" prefHeight="25.0" />
+      <Label layoutX="608.0" layoutY="350.0" prefHeight="25.0" text="Location" />
+      <TextField fx:id="apptLocation" layoutX="665.0" layoutY="350.0" prefHeight="25.0" />
+      <Label layoutX="14.0" layoutY="407.0" prefHeight="25.0" text="Contact" />
+      <TextField fx:id="apptContact" layoutX="114.0" layoutY="407.0" prefHeight="25.0" />
+      <Label layoutX="329.0" layoutY="407.0" prefHeight="25.0" text="Type" />
+      <TextField fx:id="apptType" layoutX="414.0" layoutY="407.0" prefHeight="25.0" />
+      <Label layoutX="608.0" layoutY="407.0" prefHeight="25.0" text="URL" />
+      <TextField fx:id="apptUrl" layoutX="665.0" layoutY="407.0" prefHeight="25.0" />
+      <Label layoutX="329.0" layoutY="464.0" prefHeight="25.0" text="Start Time" />
+      <ComboBox fx:id="apptStartHourBox" layoutX="414.0" layoutY="464.0" prefHeight="25.0" prefWidth="76.0" promptText="Hours" />
+      <ComboBox fx:id="apptStartMinBox" layoutX="495.0" layoutY="464.0" prefHeight="25.0" prefWidth="68.0" promptText="Mins" />
+      <Label layoutX="608.0" layoutY="464.0" prefHeight="25.0" text="End Time" />
+      <Button layoutX="196.0" layoutY="527.0" mnemonicParsing="false" onMouseClicked="#saveAppointment" text="Save" />
+      <DatePicker fx:id="apptDate" layoutX="114.0" layoutY="464.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="14.0" layoutY="464.0" text="Date" />
+      <ComboBox fx:id="apptEndHourBox" layoutX="665.0" layoutY="464.0" prefHeight="25.0" prefWidth="76.0" promptText="Hours" />
+      <ComboBox fx:id="apptEndMinBox" layoutX="746.0" layoutY="464.0" prefHeight="25.0" prefWidth="68.0" promptText="Mins" />
+   </children>
+</AnchorPane>

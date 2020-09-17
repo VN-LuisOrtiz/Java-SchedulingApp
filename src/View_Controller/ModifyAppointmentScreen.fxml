@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="605.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.ModifyAppointmentController">
+   <children>
+      <Label layoutX="332.0" layoutY="4.0" text="Edit/Delete Appointment">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Button layoutX="477.0" layoutY="554.0" mnemonicParsing="false" onMouseClicked="#changeToMainScreen" text="Cancel" />
+      <TableView fx:id="appointmentTable" layoutX="17.0" layoutY="73.0" onMouseClicked="#updateTextFields" prefHeight="275.0" prefWidth="799.0">
+         <columns>
+            <TableColumn fx:id="apptIDColumn" prefWidth="57.0" text="Appt ID" />
+            <TableColumn fx:id="customerColumn" prefWidth="86.0" text="Customer" />
+            <TableColumn fx:id="titleColumn" prefWidth="68.0" text="Title" />
+            <TableColumn fx:id="descColumn" prefWidth="95.0" text="Description" />
+            <TableColumn fx:id="locationColumn" prefWidth="86.0" text="Location" />
+            <TableColumn fx:id="contactColumn" prefWidth="76.0" text="Contact" />
+            <TableColumn fx:id="typeColumn" prefWidth="67.0" text="Type" />
+            <TableColumn fx:id="urlColumn" prefWidth="53.0" text="URL" />
+            <TableColumn fx:id="startColumn" prefWidth="102.0" text="Start Date Time" />
+            <TableColumn fx:id="endColumn" minWidth="0.0" prefWidth="108.0" text="End Date Time" />
+         </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="377.0" prefHeight="25.0" text="Title" />
+      <TextField fx:id="apptTitle" layoutX="114.0" layoutY="377.0" prefHeight="25.0" />
+      <Label layoutX="329.0" layoutY="377.0" prefHeight="25.0" text="Description" />
+      <TextField fx:id="apptDesc" layoutX="414.0" layoutY="377.0" prefHeight="25.0" />
+      <Label layoutX="608.0" layoutY="377.0" prefHeight="25.0" text="Location" />
+      <TextField fx:id="apptLocation" layoutX="665.0" layoutY="377.0" prefHeight="25.0" />
+      <Label layoutX="14.0" layoutY="434.0" prefHeight="25.0" text="Contact" />
+      <TextField fx:id="apptContact" layoutX="114.0" layoutY="434.0" prefHeight="25.0" />
+      <Label layoutX="329.0" layoutY="434.0" prefHeight="25.0" text="Type" />
+      <TextField fx:id="apptType" layoutX="414.0" layoutY="434.0" prefHeight="25.0" />
+      <Label layoutX="608.0" layoutY="434.0" prefHeight="25.0" text="URL" />
+      <TextField fx:id="apptUrl" layoutX="665.0" layoutY="434.0" prefHeight="25.0" />
+      <Label layoutX="329.0" layoutY="491.0" prefHeight="25.0" text="Start Time" />
+      <ComboBox fx:id="apptStartHourBox" layoutX="414.0" layoutY="491.0" prefHeight="25.0" prefWidth="76.0" promptText="Hours" />
+      <ComboBox fx:id="apptStartMinBox" layoutX="495.0" layoutY="491.0" prefHeight="25.0" prefWidth="68.0" promptText="Mins" />
+      <Label layoutX="608.0" layoutY="491.0" prefHeight="25.0" text="End Time" />
+      <Button layoutX="196.0" layoutY="554.0" mnemonicParsing="false" onMouseClicked="#saveChange" text="Save" />
+      <DatePicker fx:id="apptDate" layoutX="114.0" layoutY="491.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="14.0" layoutY="491.0" text="Date" />
+      <ComboBox fx:id="apptEndHourBox" layoutX="665.0" layoutY="491.0" prefHeight="25.0" prefWidth="76.0" promptText="Hours" />
+      <ComboBox fx:id="apptEndMinBox" layoutX="746.0" layoutY="491.0" prefHeight="25.0" prefWidth="68.0" promptText="Mins" />
+      <RadioButton fx:id="editButton" layoutX="17.0" layoutY="55.0" mnemonicParsing="false" onMouseClicked="#editClick" selected="true" text="Edit" />
+      <RadioButton fx:id="deleteButton" layoutX="100.0" layoutY="55.0" mnemonicParsing="false" onMouseClicked="#deleteClick" text="Delete" />
+   </children>
+</AnchorPane>

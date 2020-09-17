@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="806.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.MainController">
+   <children>
+      <TableView fx:id="appointmentTable" layoutY="143.0" prefHeight="275.0" prefWidth="795.0">
+        <columns>
+          <TableColumn fx:id="apptIDColumn" prefWidth="75.0" text="Appt ID" />
+          <TableColumn fx:id="customerColumn" prefWidth="102.0" text="Customer" />
+            <TableColumn fx:id="titleColumn" text="Title" />
+            <TableColumn fx:id="descColumn" prefWidth="127.0" text="Description" />
+            <TableColumn fx:id="locationColumn" prefWidth="141.0" text="Location" />
+            <TableColumn fx:id="startColumn" prefWidth="147.0" text="Start Date Time" />
+            <TableColumn fx:id="endColumn" minWidth="0.0" prefWidth="142.0" text="End Date Time" />
+        </columns>
+      </TableView>
+      <Button layoutX="21.0" layoutY="53.0" mnemonicParsing="false" onMouseClicked="#addCustomer" text="Add Customer" />
+      <Button layoutX="531.0" layoutY="53.0" mnemonicParsing="false" onMouseClicked="#addAppointment" text="Add Appointment" />
+      <Button layoutX="139.0" layoutY="53.0" mnemonicParsing="false" onMouseClicked="#modifyCustomer" text="Edit/Delete Customer" />
+      <Button layoutX="651.0" layoutY="53.0" mnemonicParsing="false" onMouseClicked="#modifyAppointment" text="Edit/Delete Appointment" />
+      <Label layoutX="269.0" text="Scheduling Application" textAlignment="CENTER" textFill="#745ceb">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="740.0" layoutY="474.0" mnemonicParsing="false" onMouseClicked="#logOut" text="Logout" />
+      <Button layoutX="372.0" layoutY="53.0" mnemonicParsing="false" onMouseClicked="#reports" text="Reports" />
+      <RadioButton fx:id="weeklyViewButton" layoutX="204.0" layoutY="432.0" mnemonicParsing="false" onMouseClicked="#weeklyViewClicked" text="Weekly View" />
+      <RadioButton fx:id="monthlyViewButton" layoutX="325.0" layoutY="432.0" mnemonicParsing="false" onMouseClicked="#monthlyViewClick" text="Monthly View" />
+      <DatePicker fx:id="selectDate" disable="true" layoutY="428.0" onAction="#datepickerUpdate" />
+      <RadioButton fx:id="allAppointmentsButton" layoutX="463.0" layoutY="432.0" mnemonicParsing="false" onMouseClicked="#allAppointmentsClick" selected="true" text="All Appointments" />
+      <Label fx:id="timeZoneLabel" layoutX="587.0" layoutY="126.0" text="TimeZone: " textAlignment="CENTER">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

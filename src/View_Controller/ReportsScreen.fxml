@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="258.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.ReportsController">
+   <children>
+      <Label layoutX="273.0" layoutY="4.0" text="Reports">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+      <Button layoutX="369.0" layoutY="209.0" mnemonicParsing="false" onMouseClicked="#changeToMainScreen" text="Main Screen" />
+      <RadioButton fx:id="typesByMonth" layoutX="14.0" layoutY="46.0" mnemonicParsing="false" onMouseClicked="#report1Click" text="Number of Appointment Types by Month" />
+      <RadioButton fx:id="userSchedule" layoutX="14.0" layoutY="78.0" mnemonicParsing="false" onMouseClicked="#report2Click" text="Schedule for Each Consultant" />
+      <RadioButton fx:id="customersByCountry" layoutX="14.0" layoutY="110.0" mnemonicParsing="false" onMouseClicked="#report3Click" text="Number of Customers by Country" />
+      <TextArea fx:id="textArea" layoutX="14.0" layoutY="138.0" prefHeight="65.0" prefWidth="571.0" />
+      <Button layoutX="150.0" layoutY="209.0" mnemonicParsing="false" onMouseClicked="#generateReport" text="Generate" />
+   </children>
+</AnchorPane>

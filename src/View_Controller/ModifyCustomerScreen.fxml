@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="487.0" prefWidth="1151.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View_Controller.ModifyCustomerController">
+   <children>
+      <Label layoutX="464.0" layoutY="4.0" text="Edit/Delete Customer">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+      <Button layoutX="89.0" layoutY="450.0" mnemonicParsing="false" onMouseClicked="#changeToMainScreen" text="Cancel" />
+      <TableView fx:id="customerTable" layoutX="18.0" layoutY="69.0" onMouseClicked="#updateTextFields" prefHeight="381.0" prefWidth="796.0">
+         <columns>
+            <TableColumn fx:id="nameColumn" prefWidth="102.0" text="Customer" />
+            <TableColumn fx:id="addressColumn" prefWidth="216.0" text="Address" />
+            <TableColumn fx:id="address2Column" prefWidth="110.0" text="Address 2" />
+            <TableColumn fx:id="cityColumn" prefWidth="87.0" text="City" />
+            <TableColumn fx:id="zipColumn" prefWidth="103.0" text="Postal Code" />
+            <TableColumn fx:id="countryColumn" prefWidth="82.0" text="Country" />
+            <TableColumn fx:id="phoneColumn" prefWidth="99.0" text="Phone" />
+         </columns>
+      </TableView>
+      <HBox fx:id="customerInfo" layoutX="825.0" layoutY="69.0" prefHeight="328.0" prefWidth="309.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="30.0">
+               <children>
+                  <Label prefHeight="25.0" text="Customer Name" />
+                  <Label prefHeight="25.0" text="Address" />
+                  <Label prefHeight="25.0" text="Address 2" />
+                  <Label prefHeight="25.0" text="City" />
+                  <Label prefHeight="25.0" text="Postal Code" />
+                  <Label prefHeight="25.0" text="Country" />
+                  <Label prefHeight="25.0" text="Phone" />
+               </children>
+            </VBox>
+            <VBox prefHeight="265.0" prefWidth="169.0" spacing="30.0">
+               <children>
+                  <TextField fx:id="customerName" prefHeight="25.0" />
+                  <TextField fx:id="customerAddress" prefHeight="25.0" />
+                  <TextField fx:id="customerAddress2" prefHeight="25.0" />
+                  <TextField fx:id="customerCity" prefHeight="25.0" />
+                  <TextField fx:id="customerZip" prefHeight="25.0" />
+                  <TextField fx:id="customerCountry" prefHeight="25.0" />
+                  <TextField fx:id="customerPhone" prefHeight="25.0" />
+               </children>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="10.0" left="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <Button layoutX="18.0" layoutY="450.0" mnemonicParsing="false" onMouseClicked="#saveChange" text="Save" />
+      <RadioButton fx:id="deleteButton" layoutX="120.0" layoutY="51.0" mnemonicParsing="false" onMouseClicked="#deleteClick" text="Delete" />
+      <RadioButton fx:id="editButton" layoutX="18.0" layoutY="51.0" mnemonicParsing="false" onMouseClicked="#editClick" selected="true" text="Edit" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,4 @@
+--------------------------------------Generated on 2020-07-13T22:37:28.610--------------------------------------
+Number of Customers:  1     Country:   Canada    
+Number of Customers:  1     Country:   Norway    
+Number of Customers:  5     Country:   US        

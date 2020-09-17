@@ -1,0 +1,14 @@
+--------------------------------------Generated on 2020-07-13T22:37:15.517--------------------------------------
+Number of Appointments: 1     Type: Presentation    Month:   January         Year:      2019
+Number of Appointments: 1     Type: Scrum           Month:   January         Year:      2019
+Number of Appointments: 1     Type: a               Month:   July            Year:      2020
+Number of Appointments: 1     Type: c               Month:   July            Year:      2020
+Number of Appointments: 1     Type: e               Month:   July            Year:      2020
+Number of Appointments: 1     Type: f               Month:   July            Year:      2020
+Number of Appointments: 1     Type: o               Month:   July            Year:      2020
+Number of Appointments: 1     Type: p               Month:   July            Year:      2020
+Number of Appointments: 1     Type: q               Month:   July            Year:      2020
+Number of Appointments: 1     Type: r               Month:   July            Year:      2020
+Number of Appointments: 1     Type: w               Month:   July            Year:      2020
+Number of Appointments: 1     Type: z               Month:   July            Year:      2020
+Number of Appointments: 1     Type: a               Month:   August          Year:      2020
